@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PasarNusantara - toko online produk UMKM dan kerajinan asli Indonesia.">
+  <title>Keranjang Belanja | PasarNusantara</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23f2b134'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle'%3E%F0%9F%9B%8D%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="keranjang">
+  <header id="alif_header">
+    <div class="alif_wadah alif_header_isi">
+      <a class="alif_logo" href="index.html"><span class="alif_logo_ikon">🛒</span>Pasar<span>Nusantara</span></a>
+      <nav id="alif_menu" aria-label="Menu utama">
+        <a class="alif_menu_link" data-nav="beranda" href="index.html">Beranda</a>
+        <a class="alif_menu_link" data-nav="produk" href="produk.html">Produk</a>
+        <a class="alif_menu_link" data-nav="promo" href="promo.html">Promo</a>
+        <a class="alif_menu_link" data-nav="blog" href="blog.html">Blog</a>
+        <a class="alif_menu_link" data-nav="tentang" href="tentang.html">Tentang</a>
+        <a class="alif_menu_link" data-nav="kontak" href="kontak.html">Kontak</a>
+      </nav>
+      <a class="alif_tombol_keranjang" href="keranjang.html" aria-label="Keranjang belanja">🛒 <span class="alif_teks_keranjang">Keranjang</span> <span id="alif_badge_keranjang">0</span></a>
+      <button id="alif_burger" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+<section class="alif_hero"><div class="alif_hero_kecil alif_wadah"><h1>Keranjang Belanja</h1><p>Periksa kembali pesanan Anda sebelum checkout</p></div></section>
+
+  <section class="alif_bagian">
+    <div class="alif_wadah alif_keranjang">
+      <div id="alif_daftar_keranjang"></div>
+      <aside>
+        <div class="alif_ringkasan">
+          <h3>Ringkasan Pesanan</h3>
+          <div class="alif_baris_kupon"><input id="alif_kode_kupon" placeholder="Kode kupon" aria-label="Kode kupon"><button type="button" class="alif_tombol alif_tombol_kecil" id="alif_pakai_kupon">Pakai</button></div>
+          <div id="alif_ringkasan_isi"></div>
+          <form id="alif_form_checkout" novalidate style="margin-top:14px">
+            <div class="alif_grup"><label for="alif_nama_penerima">Nama penerima</label><input id="alif_nama_penerima" autocomplete="name"><span class="alif_galat" id="alif_nama_penerima_err"></span></div>
+            <div class="alif_grup"><label for="alif_telp">No. HP</label><input id="alif_telp" inputmode="tel" placeholder="081234567890"><span class="alif_galat" id="alif_telp_err"></span></div>
+            <div class="alif_grup"><label for="alif_alamat">Alamat lengkap</label><textarea id="alif_alamat" style="min-height:80px"></textarea><span class="alif_galat" id="alif_alamat_err"></span></div>
+            <div class="alif_grup"><label for="alif_metode">Metode pembayaran</label><select id="alif_metode"><option>Transfer Bank</option><option>QRIS</option><option>E-Wallet</option><option>Bayar di Tempat (COD)</option></select></div>
+            <button class="alif_tombol alif_tombol_penuh" type="submit">Checkout Sekarang</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+  <footer id="alif_footer">
+    <div class="alif_wadah">
+      <div class="alif_footer_grid">
+        <div><a class="alif_logo" href="index.html"><span class="alif_logo_ikon">🛒</span>Pasar<span>Nusantara</span></a>
+          <p style="margin-top:10px;font-size:.92rem">Marketplace produk UMKM dan kerajinan asli Indonesia. Dari tangan perajin, untuk Anda.</p></div>
+        <div><h4>Belanja</h4><ul><li><a href="produk.html">Semua Produk</a></li><li><a href="promo.html">Promo</a></li><li><a href="keranjang.html">Keranjang</a></li></ul></div>
+        <div><h4>Informasi</h4><ul><li><a href="tentang.html">Tentang Kami</a></li><li><a href="blog.html">Blog</a></li><li><a href="kontak.html">Kontak</a></li></ul></div>
+        <div><h4>Kategori</h4><ul><li><a href="produk.html?kategori=Kuliner">Kuliner</a></li><li><a href="produk.html?kategori=Fashion">Fashion</a></li><li><a href="produk.html?kategori=Kerajinan">Kerajinan</a></li><li><a href="produk.html?kategori=Minuman">Minuman</a></li></ul></div>
+      </div>
+      <p class="alif_hak_cipta">© <span id="alif_tahun">2026</span> PasarNusantara · Dibuat oleh Muhammad Alif Al-Asyarie (NIM 2403010189) · UTS Pemrograman Internet</p>
+    </div>
+  </footer>
+
+  <button id="alif_naik" type="button" aria-label="Kembali ke atas">↑</button>
+  <div id="alif_toast" role="status" aria-live="polite"></div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
